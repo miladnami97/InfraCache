@@ -1,28 +1,28 @@
-### First Update your ubuntu server:
+# First Update your ubuntu server
 
 `sudo apt update`
 
-### Install Dependence:
+### Install Dependence
 
 `sudo apt install software-properties-common gnupg2 curl`
 
-### Import GPG Key:
+### Import GPG Key
 
 `curl https://apt.releases.hashicorp.com/gpg | gpg --dearmor > hashicorp.gpg`
 
-### Change permission of the imported file for GPG Key:
+### Change permission of the imported file for GPG Key
 
 `sudo install -o root -g root -m 644 hashicorp.gpg /etc/apt/trusted.gpg.d/`
 
-### Add repository to your repository file:
+### Add repository to your repository file
 
 `sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"`
 
-### Now Install Terraform:
+### Now Install Terraform
 
 `sudo apt install terraform`
 
-### Check Terraform after installation:
+### Check Terraform after installation
 
 `terraform --version`
 
