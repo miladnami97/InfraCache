@@ -24,9 +24,6 @@
 
 ### Check Terraform after installation:
 
-`terraform — version`
-
+`terraform --version`
 
 *[Doc link](https://medium.com/@islam.arif87/install-terraform-on-ubuntu-22-04-6c6700f83467)*
-
-
