@@ -8,7 +8,7 @@
 
 ### Import GPG Key:
 
-`curl https://apt.releases.hashicorp.com/gpg | gpg — dearmor > hashicorp.gpg`
+`curl https://apt.releases.hashicorp.com/gpg | gpg --dearmor > hashicorp.gpg`
 
 ### Change permission of the imported file for GPG Key:
 
@@ -16,7 +16,7 @@
 
 ### Add repository to your repository file:
 
-`sudo apt-add-repository “deb [arch=$(dpkg — print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"`
+`sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"`
 
 ### Now Install Terraform:
 
