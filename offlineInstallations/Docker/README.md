@@ -1,1 +1,2 @@
 containerd-1.7.11-linux-amd64
+checkout https://download.docker.com/ https://github.com/containerd/containerd/releases https://github.com/docker/buildx/releases https://github.com/docker/compose/releases
